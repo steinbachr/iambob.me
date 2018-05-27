@@ -1,4 +1,13 @@
 _site/
 .sass-cache/
-.jekyll-cache/
 .jekyll-metadata
+dist/
+
+# IDE
+.idea/
+
+# System
+.DS_Store
+
+# Node
+node_modules/

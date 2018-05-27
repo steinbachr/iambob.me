@@ -1,0 +1,26 @@
+<nav class="bs-nav d-flex justify-content-end">
+    <div class="bs-nav-item{% if page.url == '/' %} active{% endif %}">
+        <a href="/">Home</a>
+    </div>
+
+    <div class="bs-nav-item{% if page.url == '/work/' %} active{% endif %}">
+        <a href="/work/">Work</a>
+    </div>
+
+    <div class="bs-nav-item dropdown show">
+        <a class="dropdown-toggle" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        Random
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/random/woodworking/">Woodworking</a>
+        </div>
+    </div>
+
+    <div class="bs-nav-item">
+        <a href="/assets/docs/resume.pdf">Resume</a>
+    </div>
+    <div class="bs-nav-item">
+        <a href="https://blog.iambob.me/" target="_blank">Blog</a>
+    </div>
+</nav>

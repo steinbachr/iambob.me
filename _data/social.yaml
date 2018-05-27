@@ -1,0 +1,18 @@
+- name: Google+
+  image:
+  url: https://plus.google.com/u/1/+BobbySteinbach/about
+- name: Hacker News
+  image:
+  url: https://news.ycombinator.com/user?id=rigid_airship
+- name: LinkedIn
+  image:
+  url: https://www.linkedin.com/in/steinbachr
+- name: Github
+  image:
+  url: https://github.com/steinbachr
+- name: Facebook
+  image:
+  url: https://www.facebook.com/bobby.steinbach
+- name: Stack Overflow
+  image:
+  url: https://stackoverflow.com/users/1830623/bobby

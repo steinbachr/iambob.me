@@ -1,0 +1,21 @@
+.bs-sidebar {
+  background: $teal;
+  color: $white;
+  padding: 50px;
+
+  .bs-sidebar-image {
+    text-align: center;
+
+    img {
+      width: 250px;
+    }
+  }
+
+  .bs-sidebar-subheader {
+    text-align: center;
+
+    h1 {
+      font-size: 45px;
+    }
+  }
+}

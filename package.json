@@ -1,0 +1,38 @@
+{
+  "name": "meanpug-site",
+  "version": "1.0.0",
+  "description": "Public facing MeanPug, LLC website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeanPug/meanpug-site.git"
+  },
+  "keywords": [
+    "meanpug",
+    "jekyll"
+  ],
+  "author": "Bobby Steinbach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeanPug/meanpug-site/issues"
+  },
+  "homepage": "https://github.com/MeanPug/meanpug-site#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^1.12.4",
+    "popper.js": "^1.14.3",
+    "scrollpos-styler": "^0.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  }
+}

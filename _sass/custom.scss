@@ -1,0 +1,34 @@
+$primary: $red;
+$secondary: $teal;
+
+$navbar-light-color: $white;
+$navbar-light-active-color: $red;
+$navbar-nav-link-padding-x: 15px;
+
+$xss: 320px;
+
+$sizes: (
+  20: 20%
+);
+
+$spacer: 1rem !default;
+$spacers: (
+  6: ($spacer * 6)
+);
+
+$btn-font-weight: 400;
+$btn-border-radius: 25px;
+$btn-border-radius-lg: 25px;
+$btn-padding-x-lg: 130px;
+$btn-padding-y-lg: 12px;
+
+$modal-lg: 1000px;
+$modal-md: 740px;
+$modal-inner-padding: 0;
+
+$input-border-color: $blue;
+$input-border-radius: 0;
+$input-padding-y: 12px;
+$input-padding-x: 16px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
