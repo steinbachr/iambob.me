@@ -7,12 +7,16 @@
   .bs-nav-item {
     padding: 0 20px;
 
-    a {
+    > a {
       color: $white;
     }
 
     &.active a {
       color: $blue;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 10px;
     }
   }
 }

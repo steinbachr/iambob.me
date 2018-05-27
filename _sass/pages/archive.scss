@@ -1,0 +1,21 @@
+.bs-archive {
+  .bs-archive-contents {
+    padding: 30px;
+
+    .bs-archive-item {
+      border-bottom: solid 1px $gray-200;
+
+      img {
+        height: 200px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 30px 10px;
+
+      .bs-archive-item img {
+        height: 150px;
+      }
+    }
+  }
+}

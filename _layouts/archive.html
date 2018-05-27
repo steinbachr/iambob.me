@@ -2,13 +2,24 @@
 <html lang="en">
 {% include head.html %}
 <body>
-    <div class="container-fluid">
+    <div class="bs-archive container-fluid">
         <div class="row">
             {% include sidebar.html %}
 
             <div class="col-12 col-sm-8">
                 {% include nav.html %}
-                <h1>Here</h1>
+
+                <div class="bs-archive-contents">
+                {% for item in site[page.collection] %}
+                    <div class="bs-archive-item d-flex flex-column flex-sm-row justify-content-start align-items-center py-4">
+                        <img class="rounded-circle mb-4 mb-sm-0 mr-0 mr-sm-6" src="{{ item.main_image }}" />
+
+                        <div class="bs-archive-item-content">
+                            {{ item.description }}
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
             </div>
         </div>
     </div>

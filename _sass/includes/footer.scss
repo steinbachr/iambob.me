@@ -5,5 +5,9 @@
   a {
     color: $white;
     margin: 0 20px;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0 10px;
+    }
   }
 }

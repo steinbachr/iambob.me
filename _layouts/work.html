@@ -8,7 +8,10 @@
 
             <div class="col-12 col-sm-8">
                 {% include nav.html %}
-                <h1>Here</h1>
+
+                <div class="bs-content">
+                    {{ page.content | markdownify }}
+                </div>
             </div>
         </div>
     </div>
