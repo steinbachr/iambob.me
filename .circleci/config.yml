@@ -1,0 +1,114 @@
+version: 2
+
+jobs:
+    build_static:
+        working_directory: ~/project
+        docker:
+            - image: circleci/node:10
+        steps:
+          - checkout
+          - restore_cache:
+              keys:
+                - v1-dependencies-{{ checksum "package.json" }}
+                - v1-dependencies-
+          - run:
+              name: Install Dependencies
+              command: npm install
+          - save_cache:
+              key: v1-dependencies-{{ checksum "package.json" }}
+              paths:
+                  - node_modules
+          - run:
+              name: Compile Bundle
+              command: npm run build
+         # Cache the dist folder for the build_jekyll job
+          - save_cache:
+              key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+              paths:
+                  - assets/dist
+
+    build_jekyll:
+        working_directory: ~/project
+        docker:
+            - image: circleci/ruby:2.5-node
+        steps:
+          - checkout
+          - restore_cache:
+                key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+          - restore_cache:
+                key: v1-dependencies-{{ checksum "package.json" }}
+          - run:
+              name: Install Dependencies
+              command: bundle install
+          - run:
+              name: Build Site
+              command: |
+                if [ $CIRCLE_BRANCH = master ]
+                then
+                echo "running production build"
+                JEKYLL_ENV=production jekyll build
+                else
+                jekyll build
+                fi
+          - save_cache:
+              key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}-Site
+              paths:
+                  - _site
+
+    deploy_production:
+        working_directory: ~/project
+        docker:
+            - image: circleci/python:3.6-node-browsers
+        steps:
+          - run:
+              name: Install AWS CLI
+              command: sudo pip install awscli
+          - restore_cache:
+              key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}-Site
+          - run:
+              name: Deploy To S3
+              command: aws s3 sync _site/ s3://www.iambob.me/ --delete
+
+    invalidate_cloudfront_production:
+      working_directory: ~/project
+      docker:
+          - image: circleci/python:3.6-node-browsers
+      steps:
+        - run:
+            name: Install AWS CLI
+            command: sudo pip install awscli
+        - run:
+            name: Add CF preview to ~/.aws/config
+            command: aws configure set preview.cloudfront true
+        - run:
+            name: Send invalidation
+            command: aws cloudfront create-invalidation --distribution-id E1AJ50QY3WKQQI --paths "/*"
+workflows:
+    version: 2
+    build_and_deploy:
+        jobs:
+            - build_static
+            - build_jekyll:
+                requires:
+                  - build_static
+            - deploy_staging:
+                requires:
+                    - build_jekyll
+                filters:
+                    branches:
+                        ignore:
+                            - master
+            - deploy_production:
+                requires:
+                    - build_jekyll
+                filters:
+                    branches:
+                        only:
+                            - master
+            - invalidate_cloudfront_production:
+                requires:
+                    - deploy_production
+                filters:
+                    branches:
+                        only:
+                            - master
