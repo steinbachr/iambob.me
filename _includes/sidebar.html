@@ -14,4 +14,12 @@
             Hey there! I'm a developer, leader, and entrepreneur living and working out of NYC. Drop me a line, I'd love to hear from you.
         </p>
     </div>
+
+    <div class="bs-sidebar-social pt-3">
+        {% for s in site.data.social %}
+        <a class="bs-social-{{ s.name | replace:' ','-' }}" href="{{ s.url }}" target="_blank">
+            <img src="{{ s.image }}" alt="{{ s.name }}" />
+        </a>
+        {% endfor %}
+    </div>
 </div>

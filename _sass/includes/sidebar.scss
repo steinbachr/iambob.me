@@ -18,4 +18,21 @@
       font-size: 45px;
     }
   }
+
+  .bs-sidebar-social {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      margin: 0 10px;
+
+      img {
+        height: 25px;
+      }
+
+      &.bs-social-Stack-Overflow img {
+        height: 35px;
+      }
+    }
+  }
 }

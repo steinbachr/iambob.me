@@ -2,13 +2,16 @@
 <html lang="en">
 {% include head.html %}
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid bs-home">
         <div class="row">
             {% include sidebar.html %}
 
             <div class="col-12 col-sm-8">
                 {% include nav.html %}
-                <h1>Here</h1>
+
+                <div class="bs-content">
+                    {{ page.content | markdownify }}
+                </div>
             </div>
         </div>
     </div>
