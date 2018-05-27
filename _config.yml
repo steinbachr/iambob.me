@@ -28,8 +28,7 @@ collections:
   work:
     output: false
   woodworking:
-    output: true
-    permalink: /random/woodworking/:name
+    output: false
 
 
 # Build settings
