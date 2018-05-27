@@ -1,6 +1,8 @@
 ---
 main_image: /assets/images/work/rukkus-logo.png
 description: |
-    A basic bottle opener with detachable cap catcher. The newspaper cutouts are all done
-    with decoupage. In hindsight, the lettering comes off a little serial killer-ey, but yolo.
+    #### [Rukkus](https://www.rukkus.com)
+    *June 2014 - November 2016:*
+
+    As the first engineering hire at Rukkus, I found myself at an extremely ambitious startup
 ---

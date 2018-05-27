@@ -10,4 +10,25 @@
       margin: 0 10px;
     }
   }
+
+  .bs-footer-social {
+    a {
+      text-decoration: none;
+      margin: 0 10px;
+
+      img {
+        height: 25px;
+      }
+
+      &.bs-social-Stack-Overflow img {
+        height: 35px;
+      }
+    }
+  }
+
+  .bs-footer-copyright {
+    color: $white;
+    text-align: center;
+    font-size: 13px;
+  }
 }

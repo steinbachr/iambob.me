@@ -7,8 +7,16 @@
         <a href="https://blog.iambob.me" target="_blank">Blog</a>
     </div>
 
-    <div class="d-flex justify-content-center bs-footer-social">
+    <div class="d-flex justify-content-center pt-3 align-items-baseline bs-footer-social">
+        {% for s in site.data.social %}
+        <a class="bs-social-{{ s.name | replace:' ','-' }}" href="{{ s.url }}" target="_blank">
+            <img src="{{ s.image }}" alt="{{ s.name }}" />
+        </a>
+        {% endfor %}
+    </div>
 
+    <div class="pt-4 bs-footer-copyright">
+        <span>&copy; Bobby Steinbach 2018</span>
     </div>
 </footer>
 
