@@ -25,9 +25,12 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 collections:
+  work:
+    output: false
   woodworking:
     output: true
     permalink: /random/woodworking/:name
+
 
 # Build settings
 markdown: kramdown

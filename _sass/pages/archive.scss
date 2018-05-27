@@ -8,6 +8,10 @@
       img {
         height: 200px;
       }
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
 
     @include media-breakpoint-down(sm) {
@@ -15,6 +19,18 @@
 
       .bs-archive-item img {
         height: 150px;
+      }
+    }
+  }
+
+  &#bs-archive-work {
+    .bs-archive-contents .bs-archive-item img {
+      width: 100px;
+      height: auto;
+
+      @include media-breakpoint-down(sm) {
+        width: 100px;
+        height: auto;
       }
     }
   }
