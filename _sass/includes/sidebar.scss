@@ -17,6 +17,16 @@
     h1 {
       font-size: 45px;
     }
+
+    h6 {
+      font-style: italic;
+      font-size: smaller;
+
+      a {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
   }
 
   .bs-sidebar-social {
