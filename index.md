@@ -1,5 +1,15 @@
 ---
 layout: home
+schema:
+    - type: Person
+      properties:
+        alumniOf:
+            address: 360 Huntington Ave, Boston, MA 02115
+            legalName: Northeastern University
+            logo: http://saldef.org/wp-content/uploads/2011/06/northeastern-university-logo.jpg
+        givenName: Bobby
+        familyName: Steinbach
+        email: me@iambob.me
 ---
 ## Hey There!
 
