@@ -9,6 +9,7 @@ schema:
             logo: http://saldef.org/wp-content/uploads/2011/06/northeastern-university-logo.jpg
         givenName: Bobby
         familyName: Steinbach
+        name: Bobby Steinbach
         email: me@iambob.me
 ---
 ## Hey There!
