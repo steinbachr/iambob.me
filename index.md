@@ -28,6 +28,7 @@ That said, there were a few posts that received a decent reception, including:
 * [Folk to EDM: The Top 10 Artists To Code To](https://blog.iambob.me/folk-to-edm-the-top-10-artists-to-code-to/)
 * [Backstep And Time Management](https://blog.iambob.me/backstep-and-time-management/)
 * [Making a POST Request In An Android App (And Why I Hate Java)](https://blog.iambob.me/making-a-post-request-from-android-app/)
+* [Django on Kubernetes - As Concisely as Possible](https://labs.meanpug.com/django-on-kubernetes-as-concisely-as-possible/)
 
 ## Featured Projects
 
