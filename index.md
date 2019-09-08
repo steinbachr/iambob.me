@@ -23,13 +23,13 @@ In a past life I was a more active blogger. Unfortunately, that's pretty much fa
 
 That said, there were a few posts that received a decent reception, including:
 
+* [Custom application metrics with Django, Prometheus, and Kubernetes](https://labs.meanpug.com/custom-application-metrics-with-django-prometheus-and-kubernetes/)
+* [Django on Kubernetes - As Concisely as Possible](https://labs.meanpug.com/django-on-kubernetes-as-concisely-as-possible/)
 * [Accessing Google Analytics from Django](https://blog.iambob.me/accessing-google-analytics-from-django/)
 * [The Super Stupid Idiot's Guide To Getting Started With Django, Pipeline, and S3](https://blog.iambob.me/the-super-stupid-idiots-guide-to-getting-started-with-django-pipeline-and-s3/)
+* [Making a POST Request In An Android App (And Why I Hate Java)](https://blog.iambob.me/making-a-post-request-from-android-app/)
 * [Death to the Technical Interview](https://blog.iambob.me/death-to-the-technical-interview/)
 * [Folk to EDM: The Top 10 Artists To Code To](https://blog.iambob.me/folk-to-edm-the-top-10-artists-to-code-to/)
-* [Making a POST Request In An Android App (And Why I Hate Java)](https://blog.iambob.me/making-a-post-request-from-android-app/)
-* [Django on Kubernetes - As Concisely as Possible](https://labs.meanpug.com/django-on-kubernetes-as-concisely-as-possible/)
-* [Custom application metrics with Django, Prometheus, and Kubernetes](https://labs.meanpug.com/custom-application-metrics-with-django-prometheus-and-kubernetes/)
 
 ## Featured Projects
 
