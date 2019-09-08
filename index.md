@@ -1,16 +1,17 @@
 ---
 layout: home
 schema:
-    - type: Person
-      properties:
-        alumniOf:
-            address: 360 Huntington Ave, Boston, MA 02115
-            legalName: Northeastern University
-            logo: http://saldef.org/wp-content/uploads/2011/06/northeastern-university-logo.jpg
-        givenName: Bobby
-        familyName: Steinbach
-        name: Bobby Steinbach
-        email: me@iambob.me
+- type: Person
+  properties:
+    alumniOf:
+      address: 360 Huntington Ave, Boston, MA 02115
+      legalName: Northeastern University
+      logo: http://saldef.org/wp-content/uploads/2011/06/northeastern-university-logo.jpg
+    givenName: Bobby
+    familyName: Steinbach
+    name: Bobby Steinbach
+    email: me@iambob.me
+
 ---
 ## Hey There!
 
@@ -26,9 +27,9 @@ That said, there were a few posts that received a decent reception, including:
 * [The Super Stupid Idiot's Guide To Getting Started With Django, Pipeline, and S3](https://blog.iambob.me/the-super-stupid-idiots-guide-to-getting-started-with-django-pipeline-and-s3/)
 * [Death to the Technical Interview](https://blog.iambob.me/death-to-the-technical-interview/)
 * [Folk to EDM: The Top 10 Artists To Code To](https://blog.iambob.me/folk-to-edm-the-top-10-artists-to-code-to/)
-* [Backstep And Time Management](https://blog.iambob.me/backstep-and-time-management/)
 * [Making a POST Request In An Android App (And Why I Hate Java)](https://blog.iambob.me/making-a-post-request-from-android-app/)
 * [Django on Kubernetes - As Concisely as Possible](https://labs.meanpug.com/django-on-kubernetes-as-concisely-as-possible/)
+* [https://labs.meanpug.com/custom-application-metrics-with-django-prometheus-and-kubernetes/](https://labs.meanpug.com/custom-application-metrics-with-django-prometheus-and-kubernetes/ "Custom application metrics with Django, Prometheus, and Kubernetes")
 
 ## Featured Projects
 
