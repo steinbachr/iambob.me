@@ -29,7 +29,7 @@ That said, there were a few posts that received a decent reception, including:
 * [Folk to EDM: The Top 10 Artists To Code To](https://blog.iambob.me/folk-to-edm-the-top-10-artists-to-code-to/)
 * [Making a POST Request In An Android App (And Why I Hate Java)](https://blog.iambob.me/making-a-post-request-from-android-app/)
 * [Django on Kubernetes - As Concisely as Possible](https://labs.meanpug.com/django-on-kubernetes-as-concisely-as-possible/)
-* [https://labs.meanpug.com/custom-application-metrics-with-django-prometheus-and-kubernetes/](https://labs.meanpug.com/custom-application-metrics-with-django-prometheus-and-kubernetes/ "Custom application metrics with Django, Prometheus, and Kubernetes")
+* [Custom application metrics with Django, Prometheus, and Kubernetes](https://labs.meanpug.com/custom-application-metrics-with-django-prometheus-and-kubernetes/)
 
 ## Featured Projects
 
