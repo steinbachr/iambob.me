@@ -11,3 +11,6 @@
 - name: Stack Overflow
   image: /assets/images/icons/stackoverflow.png
   url: https://stackoverflow.com/users/1830623/bobby
+- name: Dev
+  image: https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg
+  url: https://dev.to/steinbachr
