@@ -15,7 +15,7 @@ schema:
 ---
 ## Hey There!
 
-I'm Bobby. Currently, I'm living and working out of NYC where I'm the Director of Engineering for [Morgan & Morgan](https://www.forthepeople.com).
+I'm Bobby. Currently, I'm living and working out of NYC where I'm a Founding Partner of [MeanPug Digital](https://www.meanpug.com).
 
 ## Popular Blog Posts
 
